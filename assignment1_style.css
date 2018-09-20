@@ -1,0 +1,51 @@
+html
+{
+	background-color: white;
+	
+}
+
+ /* Think about making these photos a fixed size so doesnt vary so much when shift window sizes */
+#personalphoto
+{
+	float: left;
+	width: 25vw;
+	height: 30vw;
+	padding: 0rem 1rem 0rem 0rem;
+	
+}
+
+#yellowstone
+{
+	float: right;
+	width: 35vw;
+	height: 15vw;
+	padding: 0rem 0rem 0rem 1rem;
+}	
+
+.navigationbar
+{
+	width: 100%;
+	height: 3rem;
+	position: fixed;
+	background-color: #9370DB;
+	text-align: center;
+
+}
+
+.navigationlinks
+{
+	padding: 5vw;
+	color: white;
+}
+
+
+.photos
+{
+	height: 100px; /* Set mins/ maxs on these photos? */
+	width: 100px;  /*How do I want to style this? */
+}
+
+p
+{
+	font: 1.5rem "Times New Roman";
+}
