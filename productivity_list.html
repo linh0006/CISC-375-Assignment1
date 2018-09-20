@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html>
+	<head>
+		<meta=charset="utf-8"/>
+		<meta name ="viewport" content= "width=device-width, initial-scale=1"/>
+		<link rel = "stylesheet" href = "list_style.css"/>
+		<script type= "text/javascript" src="listJava.js"> </script>
+		<title> Productivity List</title>
+	</head>
+	
+	<body onload= "initialize()">
+		<div class= "navigationbar">
+			 		    
+			<a  class= "navigationlinks" href= "productivity_list.html" target="_self"> Productivity List </a>
+			<a  class= "navigationlinks" href= "photo_gallery.html" target="_self"> Photo Gallery </a>
+			<a  class= "navigationlinks" href= "about_you.html" target="_self"> About the Author </a>
+		</div>
+		<br/><br/>
+		<h1> Productivity List<h1/>
+		
+		<p> Please select the item category you wish to add: </p>
+	
+		<button id= "workButton" class= "buttons" type = "button"> Work </button>
+		<button id= "schoolButton" class= "buttons" type = "button"> School </button>
+		<button id= "sportsButton" class= "buttons" type = "button"> Sports </button>
+		<button id= "miscButton" class= "buttons" type = "button"> Misc. </button>
+		<br/>
+		<!--<button id= "button" type= "button"> Add Item</button> </th>-->
+		<div>
+			<table id = "productivityTable">
+				<tr>
+					<th> Category</th>
+					<th> Description </th>
+					<th> Date Added </th>
+					<th> Due Date </th>
+					<th> Status</th>
+				</tr>
+				
+			</table>
+		</div>
+		
+	</body>
+
+
+
+
+</html>
