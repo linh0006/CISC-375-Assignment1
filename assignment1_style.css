@@ -8,19 +8,13 @@ html
 #personalphoto
 {
 	float: left;
-	width: 25vw;
-	height: 30vw;
-	padding: 0rem 1rem 0rem 0rem;
+	width: 250px;
+	height: 300px;
+	padding: 1rem 1rem 10rem 0rem;
 	
 }
 
-#yellowstone
-{
-	float: right;
-	width: 35vw;
-	height: 15vw;
-	padding: 0rem 0rem 0rem 1rem;
-}	
+
 
 .navigationbar
 {
@@ -38,6 +32,14 @@ html
 	color: white;
 }
 
+.title{
+	text-align: center;
+}
+
+table.center{
+	margin-left: auto;
+	margin-right: auto;
+}
 
 .photos
 {
@@ -45,7 +47,20 @@ html
 	width: 100px;  /*How do I want to style this? */
 }
 
+h1
+{
+	font: italic bold 150% "Times New Roman", sans-serif;
+}
+
+h3
+{
+	font: italic bold 100% "Times New Roman", sans-serif;
+	text-decoration: underline;
+}
+
 p
 {
-	font: 1.5rem "Times New Roman";
+	font: 1.2vw "Times New Roman", sans-serif;
+	/*font-size: 50%;
+	font-family: "Times New Roman", sans-serif;*/
 }

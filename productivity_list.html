@@ -16,20 +16,39 @@
 			<a  class= "navigationlinks" href= "photo_gallery.html" target="_self"> Photo Gallery </a>
 			<a  class= "navigationlinks" href= "about_you.html" target="_self"> About the Author </a>
 		</div>
-		<br/><br/>
-		<h1> Productivity List<h1/>
+		<br/><br/><br/>
+		<h2 class = "title"> <i> Productivity List </i></h2>
 		
-		<p> Please select the item category you wish to add: </p>
-	
-		<button id= "workButton" class= "buttons" type = "button"> Work </button>
-		<button id= "schoolButton" class= "buttons" type = "button"> School </button>
-		<button id= "sportsButton" class= "buttons" type = "button"> Sports </button>
-		<button id= "miscButton" class= "buttons" type = "button"> Misc. </button>
+		<p> <i>Please select the category you wish to add: </i></p>
+		
+		<div style = "text-align:center;">
+			<button id= "workButton" class= "buttons" type = "button"> Work </button>
+			<button id= "schoolButton" class= "buttons" type = "button"> School </button>
+			<button id= "sportsButton" class= "buttons" type = "button"> Sports </button>
+			<button id= "miscButton" class= "buttons" type = "button"> Misc. </button>
+			<button id= "customButton" class= "buttons" type = "button"> Custom </button>
+		</div>
+		
+			<p> <i>Sort by: </i></p>
+		<div style = "text-align:center;">
+			<button id= "categoryButton" class= "buttons" type = "button"> Category</button>
+			<button id= "addDateButton" class= "buttons" type = "button"> Add Date</button>
+			<button id= "dueDateButton" class= "buttons" type = "button"> Due Date</button>
+			<button id= "sortChangeButton" class= "buttons" type = "button"> Status</button>
+		</div>
+		
+			<p> <i> Change Status: </i> <span class = "remove"> <i> Remove Item: </i> </span> </p>
+		<div style = "text-align:center;">
+			<button id= "changeStatus" class= "buttons" type = "button"> Change Status</button>
+		
+			<button id= "removeButton" class= "buttons" type = "button"> Remove</button>
+		</div>
 		<br/>
-		<!--<button id= "button" type= "button"> Add Item</button> </th>-->
+
 		<div>
-			<table id = "productivityTable">
+			<table id = "productivityTable" class = "center">
 				<tr>
+					<th> Line Item # </th> 
 					<th> Category</th>
 					<th> Description </th>
 					<th> Date Added </th>
