@@ -1,0 +1,101 @@
+<!doctype html>
+
+<html>
+	<head>
+		<meta=charset="utf-8"/>
+		<meta name ="viewport" content= "width=device-width, initial-scale=1"/>
+		<link rel = "stylesheet" href = "lightBoxStyle.css"/>
+		<script type= "text/javascript" src="lightBoxJava.js"> </script>
+		
+		<title> Photo Gallery</title>
+	</head>
+
+	<body onload= "initialize()">
+	
+		<div class= "navigationbar">
+			 		    
+			<a  class= "navigationlinks" href= "productivity_list.html" target="_self"> Productivity List </a>
+			<a  class= "navigationlinks" href= "lightBox.html" target="_self"> Photo Gallery </a>
+			<a  class= "navigationlinks" href= "about_you.html" target="_self"> About the Author </a>
+		</div>
+		<br/><br/><br/>
+		<h1 class = "title"> Photo Gallery <h1/> 
+		
+			<table class = "center">
+				<tr>
+					<th>  </th>
+					<th>  </th>
+					<th>  </th>
+					<th>  </th>
+				</tr>
+				<tr>
+						<td> <img src= "images\Branch.jpg" onclick="initiateLightBox();currentSlide(1)"  class ="photos" /> </td>
+						<td> <img src= "images\Bridge.jpg" onclick="initiateLightBox();currentSlide(2)"  class = "photos" />  </td>
+						<td> <img src= "images\Chess.jpg" onclick="initiateLightBox();currentSlide(3)" class="photos" /></td>
+						<td> <img src= "images\City.jpg" onclick="initiateLightBox();currentSlide(4)" class="photos" /> </td>
+						<td> <img src= "images\Dandelion.jpg" onclick="initiateLightBox();currentSlide(5)" class="photos" /></td>
+					
+				</tr>
+				<tr>
+					
+						<td> <img src= "images\Deer.jpg" onclick="initiateLightBox();currentSlide(6)" class="photos" />  </td>
+						<td> <img src= "images\Dog.jpg" onclick="initiateLightBox();currentSlide(7)" class="photos" /> </td>
+						<td> <img src= "images\Feather.jpg" onclick="initiateLightBox();currentSlide(8)" class="photos" />  </td>
+						<td> <img src= "images\Flower.jpg" onclick="initiateLightBox();currentSlide(9)" class="photos" /> </td>
+						<td> <img src= "images\Frog.jpg" onclick="initiateLightBox();currentSlide(10)" class="photos" /> </td>
+				
+				</tr>
+				<tr>
+						<td> <img src= "images\Garden.jpg" onclick="initiateLightBox();currentSlide(11)" class="photos" /> </td>
+						<td> <img src= "images\Horse.jpg" onclick="initiateLightBox();currentSlide(12)" class="photos" /> </td>
+						<td> <img src= "images\Monkey.jpg" onclick="initiateLightBox();currentSlide(13)" class="photos" /> </td>
+						<td> <img src= "images\Peppers.jpg" onclick="initiateLightBox();currentSlide(14)" class="photos" /> </td>
+						<td> <img src= "images\Piano.jpg" onclick="initiateLightBox();currentSlide(15)" class="photos" />  </td>
+					
+				</tr>
+				<tr>
+						<td> <img src= "images\Pumpkin.jpg" onclick="initiateLightBox();currentSlide(16)" class="photos" /> </td>			
+						<td> <img src= "images\Street.jpg" onclick="initiateLightBox();currentSlide(17)" class="photos" /> </td>			
+						<td> <img src= "images\Sunrise.jpg" onclick="initiateLightBox();currentSlide(18)" class="photos" /> </td>
+						<td> <img src= "images\Window.jpg" onclick="initiateLightBox();currentSlide(19)" class="photos" /> </td>
+						<td> <img src= "images\Woman.jpg" onclick="initiateLightBox();currentSlide(20)" class="photos" /> </td>
+				
+				</tr>
+			</table>
+			
+		
+		
+		<div id="lightBox" class="myLightBox">
+			<span class="close" onclick="closeLightBox()"> x </span>
+		
+			<div class="myLightBoxPhotos">
+
+					<img class ="displayPicture" src="images\Branch.jpg">			
+					<img class ="displayPicture" src="images\Bridge.jpg">		
+					<img class ="displayPicture" src="images\Chess.jpg">				
+					<img class ="displayPicture" src="images\City.jpg">				
+					<img class ="displayPicture" src="images\Dandelion.jpg">				
+					<img class ="displayPicture" src="images\Deer.jpg">				
+					<img class ="displayPicture" src="images\Dog.jpg">				
+					<img class ="displayPicture" src="images\Feather.jpg">				
+					<img class ="displayPicture" src="images\Flower.jpg">				
+					<img class ="displayPicture" src="images\Frog.jpg">				
+					<img class ="displayPicture" src="images\Garden.jpg">				
+					<img class ="displayPicture" src="images\Horse.jpg">				
+					<img class ="displayPicture" src="images\Monkey.jpg">				
+					<img class ="displayPicture" src="images\Peppers.jpg">		
+					<img class ="displayPicture" src="images\Piano.jpg">		
+					<img class ="displayPicture" src="images\Pumpkin.jpg">				
+					<img class ="displayPicture" src="images\Street.jpg">			
+					<img class ="displayPicture" src="images\Sunrise.jpg">				
+					<img class ="displayPicture" src="images\Window.jpg">				
+					<img class ="displayPicture" src="images\Woman.jpg">
+								
+				<a class="prevSlide" onclick="moveSlide(-1)" style = "font-size: 150%"> < </a>
+				<a class="nextSlide" onclick="moveSlide(1)" style = "font-size: 150%"> > </a>
+			</div>
+		</div>
+	</body>
+
+
+</html>
