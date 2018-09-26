@@ -7,7 +7,7 @@ var lineItem = 0;
 
 function initialize()
 {	
-	localStorage.clear(); 
+	
 	var container2 = document.getElementById("productivityTable");
 	
 	var retrieved = JSON.parse(localStorage.getItem('toDoList'));
@@ -20,7 +20,7 @@ function initialize()
 		customColor = globalValues[0].colorCustom;
 		lineItem = globalValues[0].itemLine;
 		
-		rebuildTable(container2); //retrieve and set globals
+		rebuildTable(container2); 
 	}
 	
 		
@@ -146,29 +146,16 @@ function addDescription(){
 function addDate()
 {
 	var today = new Date();
-	var dd = today.getDate();
-	var mm = today.getMonth()+1;
-	var yyyy = today.getFullYear();
-	today = mm +'/' + dd +'/' +yyyy;
+	var date = today.getDate();
+	var month = today.getMonth()+1;
+	var year = today.getFullYear();
+	today = month +'/' + date +'/' +year;
 	todayString = today.toString();
 	
 	var newDate = document.createElement("td");
 	newDate.textContent= todayString;
 	return newDate;
 	
-	/*var dateDescription = prompt("Please enter the date this task was added (00/00/0000)", "");
-	testDate = new Date(dateDescription);
-	
-	if(testDate == "Invalid Date"){
-		alert("Invalid Date could not add request");
-		return "";
-	}
-	else{
-		
-			var newDate = document.createElement("td");
-			newDate.textContent= dateDescription;
-			return newDate;
-	}*/
 	
 }
 
@@ -422,7 +409,7 @@ function sortByCategory()
 	})
 	
 	rebuildTable(container2);
-	//console.log(toDoList);
+
 	
 }
 
@@ -671,7 +658,8 @@ function rebuildTable(container2){
 		globalValues[0].nameCustom = customName;
 		globalValues[0].colorCustom = customColor;
 		globalValues[0].itemLine = lineItem;
-		localStorage.setItem('toDoList', JSON.stringify(toDoList)); //local storage
+		
+		localStorage.setItem('toDoList', JSON.stringify(toDoList)); 
 		localStorage.setItem('globalValues', JSON.stringify(globalValues));
 		
 	}
